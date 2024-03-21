@@ -1,1 +1,138 @@
 @import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+    "lista"
+    "productos"
+    ;
+}
+
+.lista_productos{
+    width: 100%;
+    grid-area: lista;
+    overflow-x: scroll;
+}
+
+.lista{
+    width: 100%;
+}
+
+.lista ul{
+    width: 100%;
+    display: flex;
+}
+
+.lista ul li{
+    width: 10vh;
+    margin: 2vh;
+    text-decoration: none;
+    list-style: none;
+}
+
+.lista ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    grid-area: productos;
+    margin: 3vh;
+}
+
+.productos .todos_los_productos{
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.productos .todos_los_productos .imagenes_producto{
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .imagenes_producto img{
+    margin: 1vh;
+    width: 250px;
+    height: 150px;
+}
+
+.productos .todos_los_productos .imagen_principal{
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .imagen_principal img{
+    height: 600px;
+}
+
+.productos .contenido{
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .contenido .nombre_producto{
+    color: green;
+    font-size: 4em;
+}
+
+.productos .todos_los_productos .contenido .calidad_producto{
+    color: gold;
+    margin-top: 1vh;
+    font-size: 3em;
+}
+
+.productos .todos_los_productos .contenido .descripcion_producto{
+    color: green;
+    font-size: 1.5em;
+}   
+
+.productos .todos_los_productos .contenido .precio_producto{
+    display: flex;
+    margin-top: 2vh;
+}
+
+.productos .todos_los_productos .contenido .precio_producto .precio_original{
+    color: green;
+    font-size: 2em;
+}
+
+.productos .todos_los_productos .contenido .precio_producto .precio_antes{
+    color: green;
+    font-size: 1em;
+    margin-left: 1vh;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto{
+    margin-top: 2vh;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto button{
+    background: green;
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 1em;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto button a{
+    text-decoration: none;
+    color: white;
+}

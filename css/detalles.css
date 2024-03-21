@@ -1,0 +1,199 @@
+@import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+    position: absolute;
+    z-index: -2;
+}
+
+.productos .todos_los_productos{
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.productos .todos_los_productos .imagenes_producto{
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .imagenes_producto img{
+    margin: 1vh;
+    width: 250px;
+    height: 150px;
+}
+
+.productos .todos_los_productos .imagen_principal{
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .imagen_principal img{
+    height: 600px;
+}
+
+.productos .contenido{
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos .todos_los_productos .contenido .nombre_producto{
+    color: green;
+    font-size: 4em;
+}
+
+.productos .todos_los_productos .contenido .calidad_producto{
+    color: gold;
+    margin-top: 1vh;
+    font-size: 3em;
+}
+
+.productos .todos_los_productos .contenido .descripcion_producto{
+    color: green;
+    font-size: 1.5em;
+}   
+
+.productos .todos_los_productos .contenido .precio_producto{
+    display: flex;
+    margin-top: 2vh;
+}
+
+.productos .todos_los_productos .contenido .precio_producto .precio_original{
+    color: green;
+    font-size: 2em;
+}
+
+.productos .todos_los_productos .contenido .precio_producto .precio_antes{
+    color: green;
+    font-size: 1em;
+    margin-left: 1vh;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto{
+    margin-top: 2vh;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto button{
+    background: green;
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 1em;
+}
+
+.productos .todos_los_productos .contenido .comprar_producto button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.detalles{
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vh;
+    margin-left: 40%;
+}
+
+.detalles .titulo{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+.detalles .todos_los_detalles  .numeros_de_detalles .detalle{
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.detalles .todos_los_detalles .numero_de_detalles{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 1vh;
+}
+
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .imagen_del_producto img{
+    width: 100px;
+    height: 100px;
+    margin: 1vh;
+}
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .cantidad .nombre_del_producto{
+    color: black;
+    font-size: 1.4em;
+    margin: 1vh;
+}
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .cantidad .cantidad_del_producto{
+    color: black;
+    margin: 1vh;
+    border: 1px solid black;
+    font-size: 1.4em;
+}
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .precios{
+    color: green;
+    font-size: 1em;
+    margin: 1vh;
+}
+
+.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .precios .cerrar{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-size: 2em;
+}
+
+.detalles .total_detalle{
+    margin: 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles .total_detalle .titulo_total{
+    color: green;
+}
+
+.detalles .total_detalle .precio_total{
+    color: green;
+}
+
+.detalles .total_detalle .precio_total button{
+    width: 100%;
+    margin-top: 1vh;
+    background: green;
+    color: white;
+    border: none;
+    height: 30px;
+}
