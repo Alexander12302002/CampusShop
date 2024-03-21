@@ -206,3 +206,37 @@
     text-decoration: none;
     color: white;
 }
+
+@media (width < 800px){
+
+    .productos{
+        display: none;
+    }
+
+    .detalles{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .detalles .todos_los_detalles{
+        margin-top: 1vh;
+    }
+
+    .detalles .todos_los_detalles .numeros_de_detalles .detalle{
+        height: 70vh;
+    }
+
+    .detalles .total_detalle{
+        margin: 2vh;
+        border: 1px solid black;
+    }
+
+    .detalles .total_detalle .titulo_total{
+        margin: 1vh;
+    }
+
+    .detalles .total_detalle .precio_total{
+        margin: 1vh;
+    }
+}
