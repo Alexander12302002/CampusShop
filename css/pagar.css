@@ -105,7 +105,7 @@
 }
 
 
-.detalles{
+.pagar{
     border: 1px solid black;
     background: white;
     display: flex;
@@ -115,94 +115,77 @@
     margin-left: 40%;
 }
 
-.detalles .titulo{
+.pagar .titulo{
     display: flex;
     height: 5vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 2em;
 }
 
-.detalles .titulo .cerrar_detalle a{
+.pagar .titulo .cerrar_pagar a{
     color: black;
 }
 
-.detalles .todos_los_detalles  .numeros_de_detalles .detalle{
-    overflow-y: scroll;
-    height: 50vh;
-}
-
-.detalles .todos_los_detalles .numero_de_detalles{
-    display: flex;
-    flex-direction: column;
-}
-
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos{
+.pagar .detalles_a_pagar .imagen_del_producto{
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 1vh;
+    justify-content: center;
 }
 
-
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .imagen_del_producto img{
-    width: 100px;
-    height: 100px;
-    margin: 1vh;
+.pagar .detalles_a_pagar .imagen_del_producto img{
+    width: 400px;
+    height: 300px;
 }
 
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .cantidad .nombre_del_producto{
-    color: black;
-    font-size: 1.4em;
-    margin: 1vh;
-}
-
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .cantidad .cantidad_del_producto{
-    color: black;
-    margin: 1vh;
-    border: 1px solid black;
-    font-size: 1.4em;
-}
-
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .precios{
+.pagar .detalles_a_pagar .contenido_del_producto .nombre_del_producto{
     color: green;
-    font-size: 1em;
-    margin: 1vh;
-}
-
-.detalles .todos_los_detalles .numeros_de_detalles .detalle .produtos .precios .cerrar{
-    display: flex;
-    justify-content: flex-end;
-    color: black;
     font-size: 2em;
-}
-
-.detalles .total_detalle{
     margin: 1vh;
+}
+
+.pagar .detalles_a_pagar .contenido_del_producto .calidad_del_producto{
+    color: gold;
+    font-size: 1.5em;
+    margin: 1vh;
+}
+
+.pagar .detalles_a_pagar .contenido_del_producto .descripcion_del_producto{
+    color: green;
+    margin: 1vh;
+}
+
+.pagar .detalles_a_pagar .contenido_del_producto .precio{
+    color: green;
+    font-size: 1.4em;
+    margin: 1vh;
+}
+
+.pagar .detalles_a_pagar .contenido_del_producto .cantidad_y_pagar{
     display: flex;
+    margin: 1vh;
     justify-content: space-between;
+    align-items: center;
 }
 
-.detalles .total_detalle .titulo_total{
-    color: green;
+.pagar .detalles_a_pagar .contenido_del_producto .cantidad_y_pagar .cantidad{
+    width: 50%;
+    border: 1px solid black;
 }
 
-.detalles .total_detalle .precio_total{
-    color: green;
+.pagar .detalles_a_pagar .contenido_del_producto .cantidad_y_pagar .Agregar{
+    width: 40%;
 }
 
-.detalles .total_detalle .precio_total button{
-    width: 100%;
-    margin-top: 1vh;
-    background: green;
-    color: white;
-    border: none;
+.pagar .detalles_a_pagar .contenido_del_producto .cantidad_y_pagar .Agregar button{
+    width: 100px;
     height: 30px;
+    background: green;
+    border: none;
+    color: white;
 }
 
-.detalles .total_detalle .precio_total a{
+.pagar .detalles_a_pagar .contenido_del_producto .cantidad_y_pagar .Agregar a{
     text-decoration: none;
     color: white;
 }
